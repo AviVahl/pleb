@@ -1,7 +1,7 @@
-import { isPlainObject } from '@dazl/resolve-directory-context';
 import http from 'node:http';
 import https from 'node:https';
 import { FetchError, fetchText, isSecureUrl } from './http.ts';
+import { isPlainObject } from './structures.ts';
 
 export const officialNpmRegistryUrl = 'https://registry.npmjs.org/';
 

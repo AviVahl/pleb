@@ -1,12 +1,13 @@
-import { allPackagesFromContext, isString, resolveDirectoryContext } from '@dazl/resolve-directory-context';
 import fs from 'node:fs';
 import path from 'node:path';
 import PromiseQueue from 'p-queue';
 import semver from 'semver';
 import { createCliProgressBar } from '../utils/cli-progress-bar.ts';
 import { loadPlebConfig, normalizePinnedPackages } from '../utils/config.ts';
+import { allPackagesFromContext, resolveDirectoryContext } from '../utils/directory-context.ts';
 import { loadEnvNpmConfig } from '../utils/npm-config.ts';
 import { NpmRegistry, officialNpmRegistryUrl, uriToIdentifier } from '../utils/npm-registry.ts';
+import { isString } from '../utils/structures.ts';
 
 const { gt, coerce } = semver;
 

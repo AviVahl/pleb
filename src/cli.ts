@@ -19,7 +19,7 @@ program
   .option('--tag <tag>', 'tag to use for published version', 'latest')
   .action(
     async (targetPath: string, { dryRun, registry, tag }: { dryRun?: boolean; registry?: string; tag?: string }) => {
-      const { publish } = await import('./commands/publish.js');
+      const { publish } = await import('./commands/publish.ts');
 
       await publish({
         directoryPath: path.resolve(targetPath || ''),
@@ -36,7 +36,7 @@ program
   .option('--dry-run', 'no actual upgrading (just the fetching process)', false)
   .option('--registry <url>', 'npm registry to use')
   .action(async (targetPath: string, { dryRun, registry }: { dryRun?: boolean; registry?: string }) => {
-    const { upgrade } = await import('./commands/upgrade.js');
+    const { upgrade } = await import('./commands/upgrade.ts');
 
     await upgrade({
       directoryPath: path.resolve(targetPath || ''),

@@ -21,18 +21,18 @@
     "prettify": "prettier . --write"
   },
   "dependencies": {
-    "@dazl/resolve-directory-context": "^5.1.0",
     "colorette": "^2.0.20",
     "commander": "^15.0.0",
+    "minimatch": "^10.2.6",
     "p-queue": "^9.3.3",
     "promise-assist": "^2.0.1",
-    "semver": "^7.8.5"
+    "semver": "^7.8.5",
+    "type-fest": "^5.8.0"
   },
   "devDependencies": {
     "@types/node": "22",
     "@types/semver": "^7.7.1",
     "prettier": "^3.9.6",
-    "type-fest": "^5.8.0",
     "typescript": "~7.0.2"
   },
   "files": [

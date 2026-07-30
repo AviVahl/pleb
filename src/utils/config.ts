@@ -1,7 +1,8 @@
-import { findFileUpSync, isPlainObject, isString } from '@dazl/resolve-directory-context';
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { findFileUpSync } from './find-up.ts';
+import { isPlainObject, isString } from './structures.ts';
 
 export type SkipConfiguration = string | { name: string; reason?: string };
 

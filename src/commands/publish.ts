@@ -1,7 +1,7 @@
-import { childPackagesFromContext, resolveDirectoryContext } from '@dazl/resolve-directory-context';
 import type { SpawnSyncOptions } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
+import { childPackagesFromContext, resolveDirectoryContext } from '../utils/directory-context.ts';
 import { log } from '../utils/log.ts';
 import { loadEnvNpmConfig } from '../utils/npm-config.ts';
 import { getPackagesToPublish } from '../utils/npm-publish.ts';

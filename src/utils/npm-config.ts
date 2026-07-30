@@ -1,7 +1,7 @@
-import { findFileUpSync } from '@dazl/resolve-directory-context';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import { findFileUpSync } from './find-up.ts';
 import { fileExists } from './fs.ts';
 import { parseIni } from './ini.ts';
 
