@@ -4,7 +4,7 @@ import { describe, it } from 'node:test';
 import { fileURLToPath } from 'node:url';
 import { spawnAsync } from './spawn-async.ts';
 
-const fixturesRoot = fileURLToPath(new URL('../../test/fixtures', import.meta.url));
+const fixturesRoot = fileURLToPath(new URL('../../src/test/fixtures', import.meta.url));
 const cliEntryPath = fileURLToPath(new URL('../../bin/pleb.js', import.meta.url));
 
 const runCli = async (cliArgs: string[] = []) =>

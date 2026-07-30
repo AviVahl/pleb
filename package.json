@@ -13,7 +13,7 @@
   "scripts": {
     "clean": "node -e \"fs.rmSync('./dist', { recursive: true, force: true })\"",
     "prebuild": "npm run clean",
-    "build": "tsc --build",
+    "build": "tsc",
     "pretest": "npm run build",
     "test": "npm run test:only",
     "test:only": "node --test --enable-source-maps \"dist/test/*.test.js\"",
@@ -39,8 +39,7 @@
     "bin",
     "dist",
     "!dist/test",
-    "src",
-    "!*/tsconfig.{json,tsbuildinfo}"
+    "src"
   ],
   "engines": {
     "node": ">=22"
