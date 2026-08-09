@@ -1,6 +1,4 @@
-# pleb
-
-[![npm version](https://badge.fury.io/js/pleb.svg)](https://badge.fury.io/js/pleb)
+# pleb [![npm version](https://img.shields.io/npm/v/pleb)](https://www.npmjs.com/package/pleb)
 
 CLI to automate several npm package tasks.
 
