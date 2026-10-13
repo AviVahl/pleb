@@ -5,7 +5,7 @@
 
     "module": "node20",
     "target": "es2023",
-    "lib": ["es2025"],
+    "lib": ["es2025", "dom"],
     "types": ["node"],
 
     "sourceMap": true,
