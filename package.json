@@ -23,7 +23,7 @@
   "dependencies": {
     "colorette": "^2.0.20",
     "commander": "^15.1.0",
-    "minimatch": "^11.0.5",
+    "minimatch": "^11.0.8",
     "p-queue": "^10.0.0",
     "promise-assist": "^2.0.1",
     "semver": "^7.8.6",
@@ -33,7 +33,7 @@
     "@file-services/memory": "^11.1.1",
     "@types/node": "22",
     "@types/semver": "^7.8.0",
-    "prettier": "^3.9.10",
+    "prettier": "^3.10.0",
     "typescript": "~7.0.2"
   },
   "files": [
